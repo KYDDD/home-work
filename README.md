@@ -6,3 +6,4 @@
 
 - [마크다운 문법](./src/md/markdown.md)
 - [회고](./src/md/retrospect.md)
+- [avartar과제](./src/avatars/avatars.html)
