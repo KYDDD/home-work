@@ -5,5 +5,5 @@
 ## 마크다운
 
 - [마크다운 문법](./src/md/markdown.md)
-- [회고](./src/md/retrospect.md)
-- [avartar과제](./src/avatars/avatars.html)
+- [1-2주차회고](./src/md/retrospect.md)
+- [3주차회고](./src/avatars/avatars.md)
