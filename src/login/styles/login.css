@@ -41,6 +41,23 @@ form {
       background: #fff;
       border: 0.0625rem solid #dadada;
     }
+    /* 기본적으로 에러 메시지를 숨김 */
+    .error-message {
+      display: none;
+      color: red;
+      font-size: 0.875rem;
+      margin-top: 0.3125rem;
+    }
+
+    /* 사용자가 입력을 시도한 후(`:invalid`)에만 에러 메시지 표시 */
+    input:invalid:focus + .error-message {
+      display: block;
+    }
+
+    /* 입력하면(`:valid`) 에러 메시지가 사라짐 */
+    input:valid + .error-message {
+      display: none;
+    }
   }
 
   .login-button {
