@@ -7,6 +7,7 @@
   --base-font: 16px;
   /* color */
   --base-color: #121212;
+  --naver-green: #03cf5d;
 }
 
 h1 {
@@ -29,7 +30,7 @@ form {
     margin-block-end: 1.25rem;
     :focus {
       outline: none;
-      border-color: #03cf5d;
+      border-color: var(--naver-green);
       background: #e9f0fd;
     }
     input {
@@ -49,7 +50,7 @@ form {
       height: 2.8125rem;
       width: 100%;
       color: #fff;
-      background: #03cf5d;
+      background: var(--naver-green);
       border: none;
     }
   }
@@ -101,6 +102,7 @@ form {
 .button-link {
   display: none;
   color: var(--base-color);
+  font-size: 1rem;
 
   @media (min-width: 768px) {
     display: inline-block;
@@ -108,9 +110,25 @@ form {
 
   a {
     text-decoration: none;
+  }
 
-    .toggle {
-      color: var(--pastel-gray);
+  .toggle {
+    color: var(--pastel-gray);
+    background: #fff;
+    display: contents;
+
+    .toggle-label {
+      cursor: pointer;
+    }
+
+    /* 기본 상태 (OFF) */
+    .toggle-text::before {
+      content: "OFF";
+    }
+
+    .toggle-button:checked + .toggle-label .toggle-text::before {
+      content: "ON";
+      color: var(--naver-green);
     }
   }
 }

@@ -10,7 +10,7 @@
     />
     <link rel="icon" href="/src/assets/favicon/likelion.svg" />
     <link
-      rel="stylesheet"
+      rel="preload"
       as="style"
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
@@ -77,15 +77,17 @@
           <label for="password"><span class="sr-only">비밀번호</span></label>
           <input
             type="password"
-            id="userPwd"
+            id="password"
             name="userPwd"
             required
             placeholder="비밀번호"
           />
         </div>
+
         <div class="login-button">
-          <button type="submit">로그인</button>
+          <button type="submit" tabindex="-1">로그인</button>
         </div>
+
         <div class="maintain">
           <input
             type="checkbox"
@@ -156,8 +158,23 @@
             <a
               href="./pages/ip_security.html"
               aria-label="IP 보안 설정 페이지로 이동"
-              >IP 보안 <span class="toggle">OFF</span></a
-            >
+              >IP 보안
+            </a>
+            <!-- <button aria-label="ip보안 on/off버튼" type="button" class="toggle">
+              OFF
+            </button> -->
+            <div class="toggle">
+              <input
+                type="checkbox"
+                id="toggleBtn"
+                class="toggle-button"
+                hidden
+              />
+              <label for="toggleBtn" class="toggle-label"
+                ><span class="sr-only">ip보안 토글 버튼</span>
+                <span class="toggle-text" tabindex="0"></span
+              ></label>
+            </div>
           </div>
         </div>
       </fieldset>
