@@ -1,1 +1,116 @@
-/* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+@import "../../common/a11y.css";
+@import "../../common/best-reset.css";
+@import "../../common/theme.css";
+
+:root {
+  /* font-size */
+  --base-font: 16px;
+  /* color */
+  --base-color: #121212;
+}
+
+h1 {
+  inline-size: 230px;
+  margin: 50px auto;
+
+  :focus {
+    outline-color: #24388d;
+  }
+}
+
+form {
+  inline-size: 100%;
+  padding: 20px;
+  fieldset {
+    border: none;
+  }
+
+  .input {
+    margin-block-end: 1.25rem;
+    :focus {
+      outline: none;
+      border-color: #03cf5d;
+      background: #e9f0fd;
+    }
+    input {
+      width: 100%;
+      height: 2.8125rem;
+      padding-inline: 1rem;
+      font-size: 0.875rem;
+      background: #fff;
+      border: 0.0625rem solid #dadada;
+    }
+  }
+
+  .login-button {
+    button {
+      font-size: var(--base-font);
+      /* display: block; */
+      height: 2.8125rem;
+      width: 100%;
+      color: #fff;
+      background: #03cf5d;
+      border: none;
+    }
+  }
+
+  .maintain {
+    margin-block-start: 1rem;
+    @media (min-width: 768px) {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+    .custom-checkbox {
+      display: none;
+    }
+
+    /* 라벨을 체크박스 대신 클릭할 수 있도록 설정 */
+    .custom-label {
+      display: flex;
+      flex-flow: row nowrap;
+      cursor: pointer;
+      justify-content: end;
+      gap: 0.3125rem;
+
+      @media (min-width: 768px) {
+        justify-content: start;
+      }
+    }
+
+    .custom-label svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* 체크되지 않은 상태 */
+    .custom-label .checked-box {
+      display: none;
+    }
+
+    /* 체크된 상태일 때 */
+    .custom-checkbox:checked + .custom-label .unchecked-box {
+      display: none;
+    }
+    .custom-checkbox:checked + .custom-label .checked-box {
+      display: inline;
+    }
+  }
+}
+
+.button-link {
+  display: none;
+  color: var(--base-color);
+
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+
+    .toggle {
+      color: var(--pastel-gray);
+    }
+  }
+}
