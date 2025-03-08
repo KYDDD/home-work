@@ -5,7 +5,7 @@
 /* 제목 컴포넌트 스타일링 */
 .device-name {
   --text-size: var(--large-text);
-  --text-color: var(--black);
+  --text-color: var(--white);
 
   font-size: var(--text-size);
   color: var(--text-color);
@@ -21,7 +21,7 @@
 /* 본문 컴포넌트 스타일링 */
 .subhead {
   --text-size: var(--base-text);
-  --text-color: var(--black);
+  --text-color: var(--white);
   --line-height: var(--line-normal);
 
   font-size: var(--text-size);
@@ -50,7 +50,7 @@
 .button {
   --padding-block: var(--x-small-spacing);
   --padding-inline: var(--small-spacing);
-  --background-color: var(--black);
+  --background-color: var(--blue-100);
   --text-color: var(--white);
 
   /* border: 1px solid red; */
@@ -59,12 +59,73 @@
   border-radius: 100px;
   background: var(--background-color);
   color: var(--text-color);
+}
+.button.price {
+  --text-color: var(--blue-100);
+  --border-color: var(--blue-100);
+  background: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
 
-  &.price {
+/* 카드 컴포넌트 스타일링 */
+
+.card:nth-child(odd) {
+  .device-name {
     --text-color: var(--black);
-    --border-color: var(--black);
-    background: transparent;
     color: var(--text-color);
+  }
+
+  .subhead {
+    --text-color: var(--black);
+    color: var(--text-color);
+  }
+
+  & .button {
+    --background-color: var(--black);
+
+    background: var(--background-color);
+  }
+
+  & .button.price {
+    --border-color: var(--black);
+    --text-color: var(--black);
     border: 1px solid var(--border-color);
+    color: var(--text-color);
+    background: transparent;
+  }
+}
+
+.card {
+  --block-size: var(--size);
+  block-size: var(--block-size);
+  padding-block: var(--x-small-spacing);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--small-spacing);
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--base-spacing);
+    .button {
+      display: inline-block;
+    }
+    text-align: center;
+  }
+}
+
+.card-01 {
+  background: url("../products/ipad_pro.jpeg") no-repeat center/cover;
+  @media (min-width: 1024px) {
+    background: url("../products/ipad_pro_2x.jpeg") no-repeat center/cover;
+  }
+}
+
+.card-02 {
+  background: url("../products/ipad_air.jpeg") no-repeat center/cover;
+  @media (min-width: 1024px) {
+    background: url("../products/ipad_air_2x.jpeg") no-repeat center/cover;
   }
 }
