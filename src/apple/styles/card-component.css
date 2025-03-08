@@ -1,0 +1,70 @@
+@import "./reset.css";
+@import "./theme.css";
+@import "./base.css";
+
+/* 제목 컴포넌트 스타일링 */
+.device-name {
+  --text-size: var(--large-text);
+  --text-color: var(--black);
+
+  font-size: var(--text-size);
+  color: var(--text-color);
+  text-align: center;
+
+  @media (min-width: 1024px) {
+    --text-size: var(--extra-large-text);
+
+    font-size: var(--text-size);
+  }
+}
+
+/* 본문 컴포넌트 스타일링 */
+.subhead {
+  --text-size: var(--base-text);
+  --text-color: var(--black);
+  --line-height: var(--line-normal);
+
+  font-size: var(--text-size);
+  color: var(--text-color);
+  line-height: var(--line-height);
+  text-align: center;
+
+  @media (min-width: 1024px) {
+    --text-size: var(--medium-text);
+
+    font-size: var(--text-size);
+  }
+}
+
+/* 출시일 컴포넌트 스타일링 */
+.callout {
+  --text-size: var(--small-text);
+  --text-color: var(--gray);
+
+  font-size: var(--text-size);
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* 버튼 컴포넌트 스타일링 */
+.button {
+  --padding-block: var(--x-small-spacing);
+  --padding-inline: var(--small-spacing);
+  --background-color: var(--black);
+  --text-color: var(--white);
+
+  /* border: 1px solid red; */
+  padding-block: var(--padding-block);
+  padding-inline: var(--padding-inline);
+  border-radius: 100px;
+  background: var(--background-color);
+  color: var(--text-color);
+
+  &.price {
+    --text-color: var(--black);
+    --border-color: var(--black);
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+  }
+}
