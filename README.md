@@ -8,6 +8,7 @@
 - [1-2주차회고](./src/md/retrospect.md)
 - [3주차회고](./src/avatars/avatars.md)
 - [4주차회고](./src/login/login.md)
+- [5주차회고](./src/apple/apple.md)
 - [로그인과제html](./src/login/login.html)
 - [로그인과제css](./src/login/styles/login.css)
 - [apple과제html](./src/apple/apple.html)
