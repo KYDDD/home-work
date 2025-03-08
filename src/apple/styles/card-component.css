@@ -122,7 +122,7 @@
 .card {
   --block-size: var(--size);
   block-size: var(--block-size);
-  padding-block: var(--large-spacing);
+  padding-block-start: var(--large-spacing);
   display: flex;
   flex-flow: column nowrap;
   gap: var(--small-spacing);

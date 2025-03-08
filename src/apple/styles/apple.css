@@ -3,6 +3,7 @@
 /* 카드 레이아웃 */
 .card-01 {
   background: url("../products/ipad_pro.jpeg") no-repeat center/cover;
+
   @media (min-width: 1024px) {
     background: url("../products/ipad_pro_wide.jpeg") no-repeat center/cover;
   }
