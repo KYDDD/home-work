@@ -8,6 +8,7 @@
   --text-color: var(--white);
 
   font-size: var(--text-size);
+  font-weight: 700;
   color: var(--text-color);
   text-align: center;
 
@@ -70,7 +71,7 @@
 
 /* 카드 컴포넌트 스타일링 */
 
-.card:nth-child(odd) {
+.card:nth-child(even) {
   .device-name {
     --text-color: var(--black);
     color: var(--text-color);
@@ -113,19 +114,5 @@
       display: inline-block;
     }
     text-align: center;
-  }
-}
-
-.card-01 {
-  background: url("../products/ipad_pro.jpeg") no-repeat center/cover;
-  @media (min-width: 1024px) {
-    background: url("../products/ipad_pro_2x.jpeg") no-repeat center/cover;
-  }
-}
-
-.card-02 {
-  background: url("../products/ipad_air.jpeg") no-repeat center/cover;
-  @media (min-width: 1024px) {
-    background: url("../products/ipad_air_2x.jpeg") no-repeat center/cover;
   }
 }
