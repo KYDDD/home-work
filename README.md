@@ -10,3 +10,7 @@
 - [4주차회고](./src/login/login.md)
 - [로그인과제html](./src/login/login.html)
 - [로그인과제css](./src/login/styles/login.css)
+- [apple과제html](./src/apple/apple.html)
+- [apple과제html](./src/apple/styles/apple.css)
+- [apple과제컴포넌트html](./src/apple/card-component.html)
+- [apple과제컴포넌트css](./src/apple/styles/card-component.css)

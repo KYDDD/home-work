@@ -60,6 +60,12 @@
   border-radius: 100px;
   background: var(--background-color);
   color: var(--text-color);
+
+  &:hover {
+    --background-color: var(--blue-300);
+
+    background: var(--background-color);
+  }
 }
 .button.price {
   --text-color: var(--blue-100);
@@ -67,6 +73,14 @@
   background: transparent;
   color: var(--text-color);
   border: 1px solid var(--border-color);
+
+  &:hover {
+    --background-color: var(--blue-100);
+    --text-color: var(--white);
+
+    background: var(--background-color);
+    color: var(--text-color);
+  }
 }
 
 /* 카드 컴포넌트 스타일링 */
@@ -94,16 +108,28 @@
     border: 1px solid var(--border-color);
     color: var(--text-color);
     background: transparent;
+
+    &:hover {
+      --background-color: var(--black);
+      --text-color: var(--white);
+
+      background: var(--background-color);
+      color: var(--text-color);
+    }
   }
 }
 
 .card {
   --block-size: var(--size);
   block-size: var(--block-size);
-  padding-block: var(--x-small-spacing);
+  padding-block: var(--large-spacing);
   display: flex;
   flex-flow: column nowrap;
   gap: var(--small-spacing);
+
+  @media (min-width: 1024px) {
+    padding-block: var(--extra-large-spacing);
+  }
 
   .buttons {
     display: flex;

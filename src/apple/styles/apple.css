@@ -4,20 +4,43 @@
 .card-01 {
   background: url("../products/ipad_pro.jpeg") no-repeat center/cover;
   @media (min-width: 1024px) {
+    background: url("../products/ipad_pro_wide.jpeg") no-repeat center/cover;
+  }
+
+  @media (min-resolution: 192dpi) {
     background: url("../products/ipad_pro_2x.jpeg") no-repeat center/cover;
+  }
+  @media (min-resolution: 192dpi) and (min-width: 1024px) {
+    background: url("../products/ipad_pro_wide_2x.jpeg") no-repeat center/cover;
   }
 }
 
 .card-02 {
   background: url("../products/ipad_air.jpeg") no-repeat center/cover;
   @media (min-width: 1024px) {
+    background: url("../products/ipad_air_wide.jpeg") no-repeat center/cover;
+  }
+
+  @media (min-resolution: 192dpi) {
     background: url("../products/ipad_air_2x.jpeg") no-repeat center/cover;
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 1024px) {
+    background: url("../products/ipad_air_wide_2x.jpeg") no-repeat center/cover;
   }
 }
 
 .card-03 {
   background: url("../products/iphone15_pro.jpeg") no-repeat center/cover;
   @media (min-width: 1024px) {
+    background: url("../products/iphone15_pro_wide.jpeg") no-repeat center/cover;
+  }
+
+  @media (min-resolution: 192dpi) {
+    background: url("../products/iphone15_pro_2x.jpeg") no-repeat center/cover;
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 1024px) {
     background: url("../products/iphone15_pro_wide_2x.jpeg") no-repeat
       center/cover;
   }
@@ -25,28 +48,32 @@
 
 .card-04 {
   background: url("../products/iphone15.jpeg") no-repeat center/cover;
-  @media (min-width: 1024px) {
+
+  @media (min-resolution: 192dpi) {
     background: url("../products/iphone15_2x.jpeg") no-repeat center/cover;
   }
 }
 
 .card-05 {
   background: url("../products/apple_watch.jpeg") no-repeat center/cover;
-  @media (min-width: 1024px) {
+
+  @media (min-resolution: 192dpi) {
     background: url("../products/apple_watch_2x.jpeg") no-repeat center/cover;
   }
 }
 
 .card-06 {
   background: url("../products/macbook_air.jpeg") no-repeat center/cover;
-  @media (min-width: 1024px) {
+
+  @media (min-resolution: 192dpi) {
     background: url("../products/macbook_air_2x.jpeg") no-repeat center/cover;
   }
 }
 
 .card-07 {
   background: url("../products/airpods_pro.jpeg") no-repeat center/cover;
-  @media (min-width: 1024px) {
+
+  @media (min-resolution: 192dpi) {
     background: url("../products/airpods_pro_2x.jpeg") no-repeat center/cover;
   }
 }
