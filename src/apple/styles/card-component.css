@@ -128,7 +128,7 @@
   gap: var(--small-spacing);
 
   @media (min-width: 1024px) {
-    padding-block: var(--extra-large-spacing);
+    padding-block-start: var(--extra-large-spacing);
   }
 
   .buttons {
