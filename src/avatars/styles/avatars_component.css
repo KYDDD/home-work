@@ -1,0 +1,47 @@
+@import "/src/common/best-reset.css";
+@import "/src/common/a11y.css";
+
+:root {
+  --width-17: 17px;
+  --width-64: 64px;
+
+  /* 색상 */
+  --real-white: #ffffff;
+  --pretty-gray: #dbdbdb;
+  --pretty-green: #4bfe88;
+}
+.avatar {
+  img {
+    width: var(--width-64);
+    height: var(--width-64);
+    border-radius: 50%;
+  }
+}
+.state {
+  --background-color: var(--pretty-gray);
+
+  display: inline-block;
+  width: var(--width-17);
+  height: var(--width-17);
+  background: var(--background-color);
+  border-radius: 50%;
+  border: 1px solid var(--real-white);
+
+  &.active {
+    --background-color: var(--pretty-green);
+
+    color: var(--background-color);
+  }
+}
+
+/* 활성상태까지 나타나있는 이미지 컴포넌트 스타일링 */
+.avatar-wrapper {
+  display: inline-block;
+  position: relative;
+
+  .state {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

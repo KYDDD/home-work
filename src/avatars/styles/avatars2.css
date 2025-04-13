@@ -1,0 +1,11 @@
+@import "/src/avatars/styles/avatars_component.css";
+
+.avatar-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  width: 396px;
+  justify-content: center;
+  align-items: center;
+  margin-block: 30px;
+}
